@@ -1,0 +1,16 @@
+
+public class Calculator {
+	
+	// This is your addition method
+	public int add(int a, int b)  {
+		return a + b
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Calculator calc = new Calculator();
+		System.out.println("The sum is: " + calc.add(5, 3));
+
+	}
+
+}
