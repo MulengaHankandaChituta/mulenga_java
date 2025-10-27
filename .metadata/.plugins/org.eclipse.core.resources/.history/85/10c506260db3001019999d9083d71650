@@ -1,6 +1,4 @@
 import javax.swing.JLabel;
-import java.awt.*;
-import java.awt.event.*;
 import javax.swing.JPanel;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
@@ -20,7 +18,7 @@ public class InfoFormMain {
 		formPanel.setBorder(BorderFactory.createEmptyBorder(10,10,10,10));
 		
 		// Add labels and text fields
-		JLabel nameLabel = new Jlabel("Full Name:");
+		Jlabel nameLabel = new Jlabel("Full Name:");
 		JTextField nameField = new JTextField();
 		JLabel emailLabel = new JLabel("Email:");
 		JTextField emailField = new JTextField();
@@ -40,7 +38,7 @@ public class InfoFormMain {
 		formPanel.add(ageField);
 		formPanel.add(genderLabel);
 		formPanel.add(genderBox);
-		formPanel.add(bioLabel);
+		formpanel.add(bioLabel);
 		formPanel.add(bioScroll);
 		
 		// Add a button at the button
