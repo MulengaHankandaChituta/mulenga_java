@@ -1,0 +1,84 @@
+import javax.swing.JLabel;
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.JPanel;
+import javax.swing.JTextArea;
+import javax.swing.JTextField;
+
+public class InfoFormMain {
+
+	public static void main(String[] args) {
+		// Create main window (JFramme)
+		JFrame frame = new JFrame ("Personal Information Frame");
+		frame.setSize(400, 400);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.setLayout(new BorderLayout(10, 10));
+		
+		// Create a panel for the form
+		JPanel formPanel = new JPanel();
+		formPanel.setLayout(new GridLayout(5,2,5,5));
+		formPanel.setBorder(BorderFactory.createEmptyBorder(10,10,10,10));
+		
+		// Add labels and text fields
+		JLabel nameLabel = new Jlabel("Full Name:");
+		JTextField nameField = new JTextField();
+		JLabel emailLabel = new JLabel("Email:");
+		JTextField emailField = new JTextField();
+		JLabel ageLabel = new JLabel("Age:");
+		JTextField ageField = new JTextField();
+		JLabel genderLabel = new JLabel ("Gender:");
+		String[] genders = {"male",  "Female", "Other"};
+		JTextArea bioArea = new JTextArea(3,20);
+		JScrollPane bioScroll = new JScrollPane(bioArea);
+		
+		// Add all components to the panel
+		formPanel.add(nameLabel);
+		formPanel.add(nameField);
+		formPanel.add(emailLabel);
+		formPanel.add(emailField);
+		formPanel.add(ageLabel);
+		formPanel.add(ageField);
+		formPanel.add(genderLabel);
+		formPanel.add(genderBox);
+		formPanel.add(bioLabel);
+		formPanel.add(bioScroll);
+		
+		// Add a button at the button
+		JButton submit Button = new JButton("Submit");
+		submitButton.setBackground(new Color(70, 130, 180));
+		submitButton.setForeground(Color.WHITE);
+		submitButton.setFocusPainted(false);
+		
+		// label Display confirmation message
+		JLabel messageLabel = new JLabel("", SwingConstants.CENTER);
+		
+		// Action when button is clicked
+		submitButton.addActionListener(new ActionListener()) {
+			public void actionPerformed(ActionEvent e)
+			String name = nameField.getText();
+			String email = emailField.getText();
+			String age = ageField.getText();
+			String gender = (String) genderBox.getSelectedItem();
+			String bio = bioArea.getText();
+			
+			messageLabel.setText("Thank you, " + name + "!Information saved.");
+			
+			// Optionally show in a pop-up
+			JOptionPane.showMessageDialog(frame, "Name:" + name + "\nEmail: " + email + "\nBio:" + bio, "Form Submitted", JOptionPane.INFORMATION_MESSAGE);"
+					+ "}"
+					+ "});"
+					+ "// Add everything to the frame"
+					+ "frame.add(formPanel, BorderLayout.CENTER);"
+					+ "frame.add(submitButton,  BorderLayout.SOUTH);"
+					+ "frame.add(messageLabel, BorderLayout.NORTH);"
+			// Make it visible
+					frame.setVisible(true);
+		}
+		
+		
+		
+		
+
+	}
+
+}
