@@ -1,0 +1,11 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Calculator calc = new Calculator();
+		System.out.println("5 + 3 = " + calc.add(5,  3));
+
+	}
+
+}
